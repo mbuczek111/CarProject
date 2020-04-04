@@ -30,10 +30,13 @@ public class Engine{
     }
     void start()
     {
-        this.isStarted=true;
+        if(!this.isStarted)
+        {this.isStarted=true;}
+
     }
     void stop()
     {
-        this.isStarted=false;
+        if(this.isStarted)
+        {this.isStarted=false;}
     }
 }
