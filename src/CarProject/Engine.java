@@ -2,14 +2,38 @@ package CarProject;
 
 public class Engine{
 
-    public String name;
-    public double horsepower;
-    public double capacity;
-    public boolean isStarted;
+    private String name;
+    private double horsepower;
+    private double capacity;
+    private boolean isStarted;
     Engine(String n, double h, double c)
     {
         name=n;
         horsepower=h;
         capacity=c;
+    }
+    String getName()
+    {
+        return this.name;
+    }
+    double getHorsepower()
+    {
+        return this.horsepower;
+    }
+    double getCapacity()
+    {
+        return this.capacity;
+    }
+    boolean getIsStarted()
+    {
+        return isStarted;
+    }
+    void start()
+    {
+        this.isStarted=true;
+    }
+    void stop()
+    {
+        this.isStarted=false;
     }
 }

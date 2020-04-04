@@ -5,7 +5,7 @@ public class CarTester {
 
         Engine diesel = new Engine("Diesel", 130, 2);
         Car vw = new Car("VW Golf", diesel, 50);
-        vw.tank(); // I need to tank it up first, don't I?
+        //vw.tank();
         vw.drive(100, 50);
         vw.startEngine();
         vw.startEngine();
